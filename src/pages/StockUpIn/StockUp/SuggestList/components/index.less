@@ -1,0 +1,156 @@
+.suggest-info {
+  display: flex;
+  flex-wrap: wrap;
+  .suggest-info-item {
+    display: flex;
+    align-items: stretch;
+    width: 400px;
+
+    .suggest-info-item-title {
+      width: 180px;
+      line-height: 40px;
+      text-align: right;
+
+      &::after {
+        position: relative;
+        top: -0.5px;
+        margin: 0 8px 0 2px;
+        content: ':';
+      }
+    }
+
+    .suggest-info-item-nav {
+      flex: 1;
+      padding: 10px 0;
+      line-height: 20px;
+    }
+  }
+}
+.suggest-info-num {
+  .suggest-info-item {
+    width: 300px;
+  }
+}
+
+.suggest-echart {
+  min-height: 512px;
+  .suggest-tabs {
+    .ant-tabs-content{
+      padding-top: 15px;
+    }
+    .ant-pro-card-body {
+      padding: 0 !important;
+    }
+    .suggers-spu-radio {
+      padding-bottom: 15px;
+    }
+    .suggers-sku-radio {
+      padding-bottom: 15px;
+    }
+    .suggest-echartsSku-nav{
+      display: flex;
+      .suggest-echartsSku-item{
+        width: 50%;
+        padding-left: 10px;
+        &:first-child{
+          padding-left: 0;
+          padding-right: 10px;
+        }
+        .suggest-echartsSku-title{
+          text-align: center;
+          font-size: 14px;
+          font-weight: bold;
+          padding-bottom: 10px;
+        }
+      }
+    }
+    .suggers-spu-echart {
+      display: flex;
+      .line-spu-echart {
+        flex: 1;
+      }
+      .line-code-echart {
+        width: 500px;
+        margin-left: 20px;
+        .line-code-echart-title{
+          text-align: center;
+          font-size: 14px;
+          font-weight: bold;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+// 详情里的 审批日志
+.suggest-detail-approveLog {
+  display: flex;
+  line-height: 24px;
+  i{
+    width: 80px;
+    font-style: normal;
+    padding:  0 15px;
+  }
+}
+
+// 系统建议发货数量 弹窗
+.adviceShipMent {
+  .adviceShipMent-nav{
+    .adviceShipMent-title{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      &::after{
+        content: '';
+        display: block;
+        clear: both;
+        height: 0;
+      }
+      .adviceShipMent-item{
+        float: left;
+        width: 50%;
+        line-height: 24px;
+        span{
+
+        }
+        i{
+          font-style: normal;
+        }
+      }
+    }
+  }
+}
+
+
+
+// 详情里 历史的字体颜色
+.history-text-green{
+  color: #52c41a;
+}
+.history-text-red{
+  color: #f5222d;
+}
+
+
+// 详情里 历史的 实际销量曲线图
+.history-actual-sales-nav{
+  padding-top: 15px;
+  display: flex;
+  .history-actual-sales-item{
+    width: 50%;
+    padding-left: 10px;
+    &:first-child{
+      padding-left: 0;
+      padding-right: 10px;
+    }
+  }
+  .history-item-title{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+}
+.history-actual-sales-table{
+  padding-top: 15px;
+}

@@ -1,0 +1,58 @@
+.imitateTableWrap{
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    padding: 20px;
+    position: relative;
+    &::before{
+        content: ' 跨境运输周期（天）';
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        width: 120px;
+        height: 20px;
+        line-height: 20px;
+        background: #fff;
+        text-align: center;
+    }
+    .imitateTable{
+        width: 100%;
+        border: 1px solid #d9d9d9;
+        .imitateHeader{
+            background: #fafafa;
+            .ant-row{
+                border-bottom: 1px solid #d9d9d9;
+                .ant-col-12:last-child{
+                    border-right: none;
+                }
+            }
+        }
+        .ant-col{
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+        
+        .bdr1{
+            border-right: 1px solid #d9d9d9;
+        }
+        .imitateMain{
+            background: #fafafa;
+            .ant-input-number{
+                border:transparent;
+            }
+            .ant-col-6{
+                border-right: 1px solid #d9d9d9;
+                background: #fff;
+            }
+            .ant-row .ant-col-6:last-child{
+                border-right: none;
+            }
+        }
+    }
+}
+th.effectTxtRight{
+    text-align: center!important;
+}
+td.effectTxtRight{
+    text-align: right!important;
+}

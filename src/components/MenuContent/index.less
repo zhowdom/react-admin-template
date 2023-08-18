@@ -1,0 +1,182 @@
+@import '~antd/es/style/themes/default.less';
+
+.home-sider {
+  position: relative;
+  padding-top: 48px;
+
+  .home-sider-container {
+    position: fixed;
+    top: 48px;
+    left: 0;
+    width: 60px;
+    height: calc(100% - 48px);
+    overflow: auto;
+    z-index: 2;
+    box-shadow: 2px 0 4px rgba(0, 21, 41, 0.2);
+
+    .home-scrollbars {
+      >div:last-child {
+        div {
+          display: none !important;
+        }
+      }
+      &:hover {
+        >div:last-child {
+          div {
+            display: block !important;
+          }
+        }
+      }
+    }
+  }
+
+  .home-menu-search {
+    display: flex;
+    padding: 10px 0;
+    cursor: pointer;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .home-menu {
+    border-right: none;
+
+    .ant-menu-submenu{
+      padding: 0 5px;
+      margin-bottom: 6px;
+    }
+
+    .ant-menu-submenu-title {
+      height: auto;
+      margin: 0;
+      padding: 0;
+
+      .ant-menu-title-content {
+        display: block;
+      }
+
+      .ant-menu-submenu-arrow {
+        display: none;
+      }
+
+      .home-menu-title {
+        text-align: center;
+        padding: 4px 0 2px 0;
+        border-radius: 10px;
+
+        .home-menu-icon {
+          line-height: 20px !important;
+          color: #333;
+
+          span {
+            font-size: 20px !important;
+          }
+        }
+
+        .home-menu-name {
+          font-size: 13px !important;
+          line-height: 22px;
+          color: #333;
+        }
+      }
+
+      .home-menu-active {
+        background-color: #c2d3f6;
+
+        .home-menu-icon {
+          color: #062e7e;
+        }
+
+        .home-menu-name {
+          color: #062e7e;
+        }
+
+      }
+    }
+
+    // 打开的 一级样式
+    .ant-menu-submenu-open,
+    .ant-menu-submenu-selected {
+      .ant-menu-submenu-title {
+
+        .home-menu-active {
+          background-color: #c2d3f6;
+
+        }
+      }
+    }
+
+    // hover 样式
+    .ant-menu-submenu-active {
+      .ant-menu-submenu-title {
+        .home-menu-title {
+          background-color: #f1f1f1;
+        }
+
+        .home-menu-active {
+          background-color: #c2d3f6;
+        }
+      }
+    }
+  }
+}
+
+.home-sub-children {
+  height: auto !important;
+  background-color: #fff !important;
+  cursor: default;
+  padding: 0 !important;
+
+  .ant-menu-title-content {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    max-width: 665px;
+    font-size: 13px;
+  }
+
+  .home-sub-children22 {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    max-width: 665px;
+    font-size: 13px;
+  }
+
+  .home-menuitem-nav {
+    writing-mode: horizontal-tb;
+    width: 166px;
+    margin-bottom: 12px;
+    text-indent: 0;
+    color: #374151;
+    border-right: 1px solid rgb(229, 231, 235);
+
+    .home-menuitem-title {
+      color: #5687f0;
+      font-weight: bold;
+      padding: 0 0 0 20px;
+    }
+
+    .home-menuitem-body {
+      .home-menuitem-a {
+        line-height: 32px;
+        display: block;
+        cursor: pointer;
+        padding: 0 20px;
+
+        &:hover {
+          background-color: #f0f7ff;
+        }
+      }
+
+      .home-menuitem-active {
+        background-color: #d7e8fb;
+      }
+    }
+  }
+}

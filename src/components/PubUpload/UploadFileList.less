@@ -1,0 +1,307 @@
+// 上传 自定义上传结果显示
+.customUpload {
+  .myFileBack {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    height: 66px;
+    margin-bottom: 8px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    .myFileBack-isMain {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      display: none;
+      width: 40px;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 30px solid #fb5035;
+        border-right: 60px solid transparent;
+        content: '';
+      }
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        padding: 0 0 0 5px;
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+    .isMainShow {
+      display: block;
+    }
+    .myFileBack-nav {
+      display: flex;
+      flex: 1;
+      max-width: 100%;
+      cursor: pointer;
+      .myFileBack-icon {
+        display: none;
+      }
+      .myFileBack-img {
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        font-size: 35px;
+        line-height: 48px;
+        text-align: center;
+        opacity: 0.8;
+        img {
+          display: block;
+          align-items: center;
+          max-width: 100%;
+          max-height: 100%;
+        }
+        .anticon-video-camera {
+          color: #e22e5e;
+        }
+        .anticon-file-word {
+          color: #2e62e2;
+        }
+        .anticon-file-excel {
+          color: #0b881b;
+        }
+        .anticon-file-pdf {
+          color: #ef6e20;
+        }
+        .anticon-file-zip {
+          color: #651ad8;
+        }
+        .anticon-file {
+          color: #38b1ce;
+        }
+      }
+      .myFileBack-name {
+        display: inline-block;
+        flex: 1;
+        box-sizing: border-box;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 8px;
+        overflow: hidden;
+        color: #2e62e2;
+        line-height: 44px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: all 0.3s;
+      }
+    }
+    .myFileBack-option {
+      top: 22px;
+      display: flex;
+      flex: none;
+      line-height: 0;
+      button {
+        border: none !important;
+        span {
+          color: rgba(0, 0, 0, 0.45);
+          font-size: 14px;
+        }
+      }
+    }
+    .myFileBack-option-card {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+  }
+  .myFileHidden {
+    display: none;
+  }
+
+  // 上传的按钮
+  .customUpload-button {
+    margin-bottom: 8px;
+  }
+
+  // 细列表形式
+  .myFileBack-text {
+    float: left;
+    clear: both;
+    max-width: 100%;
+    height: 32px;
+    padding: 0;
+    border: none;
+    &:hover {
+      background-color: #f5f5f5;
+    }
+    .myFileBack-nav {
+      .myFileBack-icon {
+        display: block;
+        flex: none;
+        width: 15px;
+        height: 32px;
+        color: #666;
+        line-height: 32px;
+      }
+      .myFileBack-img {
+        display: none;
+      }
+      .myFileBack-name {
+        line-height: 32px;
+      }
+    }
+  }
+
+  // 方块列表
+  .ant-upload-list-picture-card-container {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+  .myFileBack-picture-card {
+    position: relative;
+    z-index: 1;
+    display: block;
+    align-items: center;
+    width: 104px;
+    height: 104px;
+    margin: 0 8px 8px 0;
+    padding: 8px;
+    font-size: 14px;
+    .myFileBack-nav {
+      display: flex;
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      .myFileBack-icon {
+        display: none;
+      }
+      .myFileBack-img {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        line-height: 86px;
+      }
+      .myFileBack-name {
+        display: none;
+      }
+    }
+    .myFileBack-option {
+      display: none;
+    }
+    .myFileBack-option-card {
+      display: block;
+      &.disabled {
+        .option-card-del {
+          display: none;
+        }
+      }
+      .option-card-del {
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        display: block;
+        width: 18px;
+        height: 18px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        background-color: #ff4d4f;
+        border-radius: 20px;
+        cursor: pointer;
+        &::before,
+        &::after {
+          position: absolute;
+          top: 4px;
+          left: 8px;
+          width: 1px;
+          height: 10px;
+          background-color: #fff;
+          content: ' ';
+        }
+        &::before {
+          transform: rotate(45deg);
+        }
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+      .option-card-isMain {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: none;
+        height: 18px;
+        padding: 0 5px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        background-color: #ff4d4f;
+        cursor: pointer;
+      }
+    }
+  }
+  .myFileBack-picture-card:hover {
+    .myFileBack-option-card {
+      .option-card-isMain {
+        display: block;
+      }
+    }
+  }
+}
+.customUpload-small {
+  .myFileBack-picture-card {
+    width: 70px;
+    height: 70px;
+    padding: 2px;
+  }
+  .ant-upload.ant-upload-select-picture-card {
+    width: 70px;
+    height: 70px;
+  }
+}
+.customUpload-mini {
+  .myFileBack-picture-card {
+    width: 45px;
+    height: 45px;
+    padding: 2px;
+  }
+  .ant-upload.ant-upload-select-picture-card {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+// 只数量限制为1的时候，card形式 不要底边距   这一段要放到样式最后
+.customUpload-one {
+  .myFileBack-picture-card {
+    margin: 0 8px 0 0;
+  }
+  .ant-upload.ant-upload-select-picture-card {
+    margin: 0;
+  }
+}
+
+.customUpload-button-loading {
+  color: #2e62e2;
+}
+.ant-form-item-has-error {
+  .ant-upload.ant-upload-select-picture-card {
+    border: 1px dashed #ff4d4f !important;
+  }
+  .customUpload-button {
+    color: #ff4d4f;
+    border-color: #ff4d4f;
+  }
+}

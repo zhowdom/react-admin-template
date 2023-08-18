@@ -1,0 +1,92 @@
+.virtual-table {
+  .ant-table-container::before,
+  .ant-table-container::after {
+    display: none;
+  }
+  .ant-table.ant-table-bordered > .ant-table-title {
+    min-width: calc(100vw - 238px);
+    padding: 0 4px 6px 0;
+    font-size: 14px;
+    border: 0;
+  }
+  .ant-table-title + .ant-table-container table > thead > tr:first-child th:nth-last-child(2) {
+    border-right-width: 2px;
+  }
+  .ant-table-title + .ant-table-container table > thead > tr:first-child th:last-child {
+    background: #d9d9d9;
+  }
+  col:not(:last-child && :first-child) {
+    min-width: 90px; // todo: 合并表头错位问题 兼容写法
+  }
+}
+
+.virtual-table-cell {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2px 8px;
+  overflow: auto;
+  overflow-y: hidden;
+  text-align: left;
+  line-height: 17px;
+  word-break: break-all;
+  background: #fff;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  &.hide {
+    display: none;
+  }
+}
+
+[data-theme='dark'] .virtual-table-cell {
+  box-sizing: border-box;
+  padding: 8px;
+  background: #141414;
+  border-bottom: 1px solid #303030;
+}
+.ant-table-cell-fix-left {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  z-index: 2;
+  background: #fff;
+}
+.bordrB2 {
+  border-bottom: 4px solid #d9d9d9 !important;
+}
+.detailTitle {
+  position: absolute;
+  top: 44px;
+  left: 252px;
+  z-index: 1;
+  width: 101px;
+  height: 54.69px;
+  padding: 8px;
+  line-height: 38.69px;
+  text-align: center;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #d9d9d9;
+}
+.fixed-details {
+  margin-top: 2px;
+  overflow-y: hidden;
+  .fixed-item {
+    display: block;
+    box-sizing: content-box;
+    width: 99px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    &:nth-child(2) {
+      line-height: 16px;
+      border-top: 1px solid #d9d9d9;
+      border-bottom: 1px solid #d9d9d9;
+    }
+    &:nth-child(4) {
+      border-bottom: 1px solid #d9d9d9;
+    }
+    &:nth-child(3) {
+      border-bottom: 1px solid #d9d9d9;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+
+figure.image {
+  margin: 0 2px 0 1px;
+  border: 1px solid gray;
+}
+
+figure.align-left {
+  float: left;
+}
+
+figure.align-right {
+  float: right;
+}
+
+figure.image img {
+  margin: 8px 8px 0 8px;
+}
+
+figure.image figcaption {
+  margin: 6px 8px 6px 8px;
+  text-align: center;
+}
+
+
+/*
+ Alignment using classes rather than inline styles
+ check out the "formats" option
+*/
+
+img.align-left {
+  float: left;
+}
+
+img.align-right {
+  float: right;
+}
+
+img.img-auto {
+  max-width: 100%;
+  height: auto;
+}
+
+img.img-full-width {
+  width: 100%;
+  height: auto;
+}
+
+/* Basic styles for Table of Contents plugin (toc) */
+.mce-toc {
+  border: 1px solid gray;
+}
+
+.mce-toc h2 {
+  margin: 4px;
+}
+
+.mce-toc li {
+  list-style-type: none;
+}
+
+/* 覆盖默认富文本弹框 */
+.tox-tinymce-aux {
+  z-index: 999;
+}
+
+.mce-content-body p {
+  margin: 0
+}
+
+.mce-content-body p img {
+  display: block;
+  max-width: 100%;
+}

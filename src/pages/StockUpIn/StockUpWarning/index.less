@@ -1,0 +1,45 @@
+tr.stripe {
+  &:nth-child(even) {
+    & > td:not([rowSpan='5']) {
+      background: #e6f7ff !important;
+      &.bg-red {
+        background: #ffccc7 !important;
+      }
+      &.bg-yellow {
+        background: #fde56a !important;
+      }
+    }
+  }
+  .bg-yellow {
+    background: #fde56a !important;
+  }
+  .bg-red {
+    background: #ffccc7 !important;
+  }
+  td > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+.bg-yellow {
+  background: #fde56a !important;
+}
+.bg-red {
+  background: #ffccc7 !important;
+}
+.title-bg-blue {
+  background: rgb(45, 183, 245) !important;
+}
+.modal-table .ant-modal-body .ant-pro-table-search .ant-pro-query-filter {
+  padding: 0;
+}
+.warning-pop .ant-tree-treenode {
+  &:nth-child(1),
+  &:nth-child(2) {
+    display: none;
+  }
+  // &:nth-child(12) {
+  //   display: none;
+  // }
+}

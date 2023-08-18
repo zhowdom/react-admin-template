@@ -1,0 +1,68 @@
+.userForm {
+  .ant-form-item {
+    margin-bottom: 15px;
+  }
+  .userRole {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10px 10px;
+    background-color: #f8f8f8;
+  }
+  .changeRole-nav {
+    border: 1px solid #ececec;
+    height: 100%;
+
+    .changeRole-title {
+      padding: 0 8px;
+      border-bottom: 1px solid #ececec;
+      line-height: 30px;
+    }
+    .changeRole-search {
+      display: flex;
+      padding: 5px 10px;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #ececec;
+
+      p {
+        margin: 0;
+      }
+
+      p.t1 {
+        flex: 1;
+        padding-right: 5px;
+      }
+    }
+
+    .changeRole-item {
+      max-height: 400px;
+      overflow-y: auto;
+
+      .changeRole-value {
+        border-bottom: 1px solid #ececec;
+        line-height: 35px;
+        padding: 0 15px;
+
+        &:hover {
+          background-color: #f8f8f8;
+        }
+
+        button,.anticon-check-circle {
+          float: right;
+          margin-top: 5px;
+        }
+        .anticon-check-circle {
+          float: right;
+          font-size: 16px;
+          margin-top: 10px;
+          margin-right: 12px;
+        }
+      }
+    }
+
+    .changeRole-empty {
+      text-align: center;
+      color: blue;
+      padding: 150px 0;
+    }
+  }
+}

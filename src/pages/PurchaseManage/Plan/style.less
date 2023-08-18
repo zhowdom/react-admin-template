@@ -1,0 +1,55 @@
+@import '~antd/es/style/themes/default.less';
+
+// 单个生成采购单
+.add-order-byPlan-one {
+  margin-bottom: 24px;
+  padding: 10px;
+  background: #f8f8f8;
+  .ant-form-item {
+    margin-bottom: 0 !important;
+  }
+}
+.add-order-one-total {
+  padding-bottom: 10px;
+  line-height: 22px;
+  text-align: right;
+  span {
+    color: #2e62e2;
+  }
+}
+.add-order-one-table {
+  .ant-input-number {
+    width: 100%;
+  }
+  .ant-form-item-extra {
+    color: #faad14;
+  }
+}
+.add-order-one-signingType {
+  .ant-form-item-required::after {
+    display: none;
+  }
+}
+
+// 生成多供应商时，选择供应商
+.addOrder-choseVendor {
+  display: flex;
+  padding-bottom: 15px;
+  .ant-tag {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+
+// 国内采购计划列表 clearance_period--》是否清仓期的sku 1是
+.row-cancel {
+  .ant-table-cell {
+    background-color: #ffccc7;
+  }
+  &:hover {
+    .ant-table-cell-row-hover {
+      background-color: #ffd9d5 !important;
+    }
+  }
+}

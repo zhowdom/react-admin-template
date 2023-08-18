@@ -1,0 +1,60 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: auto;
+  background-image: url('/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 50px 0;
+  background-color: #fff;
+  width: 460px;
+  position: relative;
+  border-radius: 4px;
+  .login-logo{
+    position: absolute;
+    display: flex;
+    top: -75px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    justify-content: center;
+    color: #fff;
+    img{
+      display: inline-block;
+      height: 40px;
+    }
+  }
+  .footer {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: -24px;
+    font-size: 14px;
+    left: 0;
+    z-index: 1;
+    opacity: 0.8;
+  }
+}
+.icon {
+  margin-left: 8px;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: @primary-color;
+  }
+}

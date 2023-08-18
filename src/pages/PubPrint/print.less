@@ -1,0 +1,123 @@
+@import '~antd/es/style/themes/default.less';
+
+// 打印
+body {
+  height: auto;
+}
+#root {
+  height: auto;
+}
+.order-print {
+  font-size: 12px !important;
+  .order-print-body {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    .order-print-page {
+      padding-bottom: 15px;
+      // height: 1200px;
+      page-break-after: always;
+    }
+    .order-print-title {
+      margin-top: 30px;
+      font-size: 16px;
+      line-height: 40px;
+      text-align: center;
+      span {
+        float: left;
+      }
+      i {
+        float: right;
+        font-style: normal;
+      }
+    }
+    .tsa {
+      border-color: #000;
+      .d-item {
+        border-color: #000;
+        .d-item-title {
+          color: #000;
+          background: #fff;
+          border-color: #000;
+        }
+        .d-item-nav {
+          color: #000;
+        }
+      }
+    }
+
+    .purchase-table {
+      .d-item {
+        line-height: 18px;
+        .d-item-title {
+          padding: 5px;
+        }
+        .d-item-nav {
+          padding: 5px;
+        }
+      }
+    }
+
+    .approval_history {
+      display: flex;
+      line-height: 28px;
+      span {
+        display: block;
+      }
+      .name {
+        min-width: 100px;
+        text-align: center;
+      }
+      .time {
+        min-width: 150px;
+        font-style: normal;
+        text-align: center;
+      }
+    }
+  }
+  .ant-table-tbody,
+  .ant-table.ant-table-small {
+    font-size: 12px !important;
+  }
+  .order-print-btn {
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    z-index: 2;
+    text-align: right;
+    p {
+      color: #ff4d4f;
+      line-height: 40px;
+    }
+  }
+}
+
+@media only print {
+  .order-print-btn {
+    display: none !important;
+  }
+}
+
+.recon-table {
+  .recon-table-title {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .ant-table-container {
+    border-color: #000 !important;
+  }
+  table {
+    border-color: #000 !important;
+    td,
+    th {
+      padding: 2px !important;
+      border-color: #000 !important;
+    }
+  }
+}
+.center-th {
+  th {
+    text-align: center !important;
+  }
+}

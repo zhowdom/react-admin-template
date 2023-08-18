@@ -1,0 +1,53 @@
+@import '~antd/es/style/themes/default.less';
+
+.vendor-group-id {
+  .vendor-group-item {
+    .vendor-group-title {
+      padding: 6px 24px;
+      font-weight: bold;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .vendor-group-content {
+      padding: 5px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+  }
+  .ant-tree.ant-tree-block-node .ant-tree-list-holder-inner {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+
+.productLine-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #f0f0f0;
+  &:last-child {
+    margin: 0;
+    border: none;
+  }
+  .vendor-group-title {
+    white-space: nowrap;
+    text-align: left;
+    word-break: normal;
+  }
+  .vendor-group-content {
+    flex: 1;
+    text-align: left;
+    .ant-tag {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.full-height-body {
+  .ant-modal-body {
+    max-height: 83vh;
+  }
+}
+// 店铺权限
+.checkbox-item {
+  margin-bottom: 0;
+}

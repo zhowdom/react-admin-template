@@ -1,0 +1,120 @@
+.stock-order-item {
+  margin-bottom: 25px;
+  .stock-item {
+    display: flex;
+    line-height: 20px;
+    border-right: 1px solid #ccc;
+
+    .stock-item-title {
+      display: flex;
+      flex: 1;
+      border-top: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+
+      span {
+        display: block;
+        width: 110px;
+        padding: 10px 5px;
+        text-align: right;
+        background: #f5f5f5;
+        border-right: 1px solid #ccc;
+      }
+
+      div {
+        flex: 1;
+        padding: 10px 10px;
+      }
+    }
+  }
+
+  .list_inner_table {
+    height: 1px;
+    padding: 0 !important;
+    .list_inner_table_header {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    .list_inner_table_body {
+      height: 100%;
+      .list_inner_table_nav {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        &:last-child {
+          border-bottom: none;
+        }
+        .list_inner_table_body_num {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+        }
+      }
+    }
+
+    .list_inner_table_header_num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .t1 {
+      width: 400px;
+      border-right: 1px solid #ccc;
+    }
+
+    .t2 {
+      width: 80px;
+      //line-height: 45px;
+      border-right: 1px solid #ccc;
+    }
+
+    .t3 {
+      flex: 1;
+      line-height: 45px;
+    }
+
+    .s1 {
+      width: 400px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-right: 1px solid #ccc;
+
+      span {
+        padding: 0 5px;
+      }
+
+      i {
+        padding: 0 5px;
+      }
+    }
+
+    .s2 {
+      width: 80px;
+      height: 40px;
+      line-height: 40px;
+      border-right: 1px solid #ccc;
+    }
+
+    .s3 {
+      flex: 1;
+    }
+  }
+
+  .ant-table table,
+  .ant-table-container {
+    border-color: #ccc !important;
+  }
+
+  .ant-table-thead > tr > th {
+    background-color: #f5f5f5;
+    border-color: #ccc !important;
+  }
+
+  .ant-table-tbody > tr > td {
+    border-color: #ccc !important;
+  }
+}

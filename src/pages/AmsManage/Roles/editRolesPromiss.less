@@ -1,0 +1,118 @@
+.editRolesPromiss {
+  flex: 1;
+  height: 550px;
+  overflow-y: auto;
+
+  .pButton {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dedede;
+    padding: 3px 10px;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    color: #1890ff;
+  }
+
+  .buttonList {
+    padding: 10px 10px 0 10px;
+    background-color: #f8f8f8;
+    margin-bottom: 5px;
+
+    .menus-button-title {
+      p {
+        margin: 0;
+        display: inline-block;
+
+        b {
+          font-weight: normal;
+        }
+      }
+    }
+
+    .menus-button {
+      &::after {
+        content: '';
+        height: 0;
+        display: block;
+        clear: both;
+      }
+
+      p {
+        margin: 0;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #dedede;
+        padding: 0 10px;
+        border-radius: 3px;
+        display: flex;
+        background-color: #fff;
+
+        i {
+          font-size: 12px;
+          font-style: normal;
+          color: #1890ff;
+          padding: 0 5px;
+        }
+
+        i.ts {
+          color: #999;
+        }
+      }
+    }
+  }
+
+  span.m-g {
+    color: #389e0d;
+  }
+
+  span.m-d {
+    color: #ff0000;
+  }
+  .light-search-form {
+    padding: 6px 6px 0 3px !important;
+  }
+}
+
+.editRolesPromiss-roles {
+  padding: 5px;
+  display: flex;
+  .light-search-form {
+    padding: 6px 6px 0 3px !important;
+  }
+
+  .editRolesP-all {
+    width: 50%;
+    padding-right: 15px;
+  }
+
+  .editRolesP-user {
+    flex: 1;
+  }
+
+  .editRolesP-title {
+    border: 1px solid #dedede;
+    border-bottom: none;
+    line-height: 35px;
+    padding: 0 15px;
+  }
+
+  .editRolesP-body {
+    max-height: 340px;
+    overflow-y: auto;
+    border: 1px solid #d9d9d9;
+    padding: 4px;
+    .list-green {
+      color: #389e0d;
+    }
+
+  }
+
+
+}
+
+.editRolesP-remark {
+  padding-top: 20px;
+}

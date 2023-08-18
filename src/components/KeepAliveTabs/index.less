@@ -1,0 +1,57 @@
+.alive-tabs {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #fff;
+
+  li {
+    position: relative;
+    display: inline-block;
+    margin-top: 9px;
+    padding: 0 28px 0 10px;
+    line-height: 32px;
+    vertical-align: top;
+    list-style: none;
+    border-right: solid 1px #e6e6e6;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .active {
+    height: 32px;
+    background: rgba(#1890ff, 0.1);
+    border-bottom: 2px solid #2e62e2;
+    // background-color: #42b983;
+  }
+
+  .home_active {
+    height: 32px;
+    padding: 0 10px;
+    background: rgba(#1890ff, 0.1);
+    border-bottom: 2px solid #2e62e2;
+    // background-color: #42b983;
+  }
+
+  .home_deactive {
+    padding: 0 10px;
+  }
+
+  .deactive {
+    background: #fff;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 0;
+    outline: none;
+    // transform: translateY(-50%);
+  }
+}

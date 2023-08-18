@@ -1,0 +1,50 @@
+@import '~antd/es/style/themes/default.less';
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+
+.homeIcon{
+  font-size: 16px;
+  padding: 0 5px;
+  margin-right: 5px;
+}
+
+
+.myUserInfo{
+  padding: 0 5px;
+  min-width: 95px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+}
+.menuDropdown{
+  li span{
+    svg{
+      margin-right: 3px;
+    }
+  }
+
+}
+.modal-account-info {
+  .productLine-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    &:last-child {
+      margin: 0;
+      border: none;
+    }
+    .vendor-group-title {
+      white-space: nowrap;
+      text-align: left;
+      word-break: normal;
+    }
+    .vendor-group-content {
+      flex: 1;
+      text-align: left;
+      .ant-tag {
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
